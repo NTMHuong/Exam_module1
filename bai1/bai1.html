@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc nhất</title>
+</head>
+<body>
+<script>
+    let x;
+    function giaiPhuongTrinh(a, b) {
+        if (a === 0) {
+            if (b === 0) {
+                alert('Phương trình vô số nghiệm.');
+
+            } else {
+                alert('Phương trình vô nghiệm');
+            }
+        } else {
+            x = -b / a;
+            alert('Phương trình có nghiệm: ' + x);
+        }
+    }
+
+    // giải phương trình bậc nhất với hệ số a = 5, b = 10;
+    let a = 5;
+    let b = 8;
+    document.write(giaiPhuongTrinh(a,b));
+</script>
+</body>
+</html>

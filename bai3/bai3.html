@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let Vowel = ['a', 'o', 'e', 'u', 'i'];
+  let count = 0;
+  function check(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < Vowel.length; j++) {
+        if (arr[i] === Vowel[j]) {
+          count++;
+        }
+      }
+    }
+    if (count != 0) return count;
+    return false;
+
+  }
+
+  //kiem tra
+  let arr = ['a', 2, 'o', 3, 'e', 4];
+  alert(check(arr));
+</script>
+</body>
+</html>
